@@ -1,0 +1,22 @@
+plugins {
+    id 'java'
+}
+
+group 'edu.yaans'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation group: 'io.reactivex.rxjava2', name: 'rxjava', version: '2.2.21'
+    implementation group: 'org.slf4j', name: 'slf4j-api', version: '2.0.0-alpha5'
+
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.7.0'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.7.0'
+}
+
+test {
+    useJUnitPlatform()
+}
